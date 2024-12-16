@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Glegoo&display=swap");
+
+.booking-container {
+  width: 500px; /* Tilpas bredden som ønsket */
+  margin: auto;
+  font-family: "Glegoo", serif;
+  text-align: center;
+  color: #333;
+}
+
+.close-btn-booket {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  width: 40px;
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+}
+
+.image-booket {
+  background-color: #e6e6d9; /* Baggrundsfarve som vist i billedet */
+  padding: 10px 0;
+  border-radius: 8px;
+  margin-top: 100px;
+}
+
+.floating-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-container {
+  padding: 15px 0;
+}
+.booking-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.booking-thanks {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.booking-details {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

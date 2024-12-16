@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Glegoo&display=swap");
+
+/* Page Container */
+.page-container {
+  text-align: center;
+  width: 100%;
+  height: 100vh; /* Fylder hele skærmen */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrerer indholdet vertikalt */
+  align-items: center; /* Centrerer indholdet horisontalt */
+  background-color: #f2f5e9; /* Lys baggrundsfarve */
+  box-sizing: border-box; /* Inkluder padding i elementets bredde/højde */
+  margin: 0;
+}
+
+/* Logo */
+.logo img {
+  width: 300px; /* Justér størrelsen af logoet */
+  margin-bottom: 40px;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Afstand mellem knapperne */
+  align-items: center; /* Centrerer knapperne horisontalt */
+  justify-content: center; /* Centrerer knapperne vertikalt */
+  width: 100%;
+}
+
+/* Generelle knapper */
+button {
+  width: 80%; /* Tilpasser bredden til 80% af containeren */
+  max-width: 300px; /* Maksimal bredde */
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px; /* Afrundede hjørner */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Blød overgang ved hover */
+}
+
+/* Login knap (hvid baggrund med sort tekst) */
+.login-btn {
+  background-color: #ffffff; /* Hvid baggrund */
+  color: #000000; /* Sort tekst */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Let skyggeeffekt */
+}
+
+/* Login hover-effekt */
+.login-btn:hover {
+  background-color: #f0f0f0; /* Let grå baggrund ved hover */
+}
+
+/* Opret bruger knap (mørk baggrund med hvid tekst) */
+.signup-btn {
+  background-color: #222222; /* Mørk baggrund */
+  color: #ffffff; /* Hvid tekst */
+}
+
+/* Opret bruger hover-effekt */
+.signup-btn:hover {
+  background-color: #333333; /* Let lysere grå ved hover */
+}
+
+/* Form Container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Sørg for at formularen fylder hele containeren */
+  max-width: 500px; /* Begræns formularens bredde */
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 280px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  color: #000000;
+  background-color: #b3b3b3; /* Sæt baggrundsfarven til en lys grå */
+  transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4d4d;
+  margin-top: 12px;
+  font-size: 14px;
+}

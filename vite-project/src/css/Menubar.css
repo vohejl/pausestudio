@@ -1,0 +1,51 @@
+/* BottomNav.css */
+.menubarbottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #C3C8B3;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-bottom: 70px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.2s ease;
+  margin: 0;
+}
+
+.nav-item .icon {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+img {
+  width: 40px;
+  object-fit: contain;
+}
+
+.profile-icon img {
+  height: 33px;
+  padding-bottom: 4px;
+}

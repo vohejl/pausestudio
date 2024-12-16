@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&display=swap');
+/* Generel styling til hele onboarding-siden */
+.onboarding-slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  font-family: "Glegoo", serif;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.666);
+  z-index: 1;
+}
+
+/* Luk-knap (krydset) */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 40px;
+  width: 40px;
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+}
+
+/* Tekstindhold */
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.content h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* CTA-knap */
+.cta-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 223px;
+  height: 45px;
+  background-color: #222222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cta-btn:hover {
+  background-color: #444;
+}
+
+/* Navigationsprikker */
+.dots {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #000;
+}

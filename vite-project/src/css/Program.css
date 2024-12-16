@@ -1,0 +1,361 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Glegoo&display=swap");
+
+/* Grundlæggende Styles for hele siden */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family: "Glegoo", serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 180px;
+}
+
+/* Titel sektion */
+.title-section {
+  background-color: #ffffff;
+}
+
+.title-section h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #222222;
+  padding: 0 15px;
+  font-weight: 600;
+}
+
+/* Filter sektion */
+.filter-buttons-container,
+.filter-buttons-slider {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filter-buttons-container::-webkit-scrollbar,
+.filter-buttons-container {
+  display: none; /* Skjuler scrollbar for webkit-browsere og Firefox */
+}
+
+/* Filter knapper */
+.filter-btn {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  border-radius: 0;
+  flex-shrink: 0;
+  white-space: nowrap;
+  min-width: 120px;
+  max-width: 150px;
+}
+
+.filter-btn:hover {
+  background-color: #a1b09b;
+}
+
+/* Søgefelt */
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* Program Cards */
+.program-list {
+  gap: 20px;
+  background-color: #ffffff;
+}
+
+.program-card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 10%;
+}
+
+.program-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.program-image {
+  height: 150px;
+  background-color: #e0e0e0;
+  background-size: cover;
+  background-position: center;
+}
+
+.program-content {
+  padding: 20px;
+}
+
+.program-content h2 {
+  font-size: 18px;
+  color: #222222;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.program-content p {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.program-length {
+  color: #c3c8b3;
+  font-size: 14px;
+}
+
+.rating {
+  display: flex;
+  margin-top: 10px;
+}
+
+.rating span {
+  font-size: 18px;
+  color: #f39c12;
+}
+
+/* Show More / Show Less Button */
+.show-more-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30%;
+  background-color: #ffffff;
+  padding: 10%;
+}
+
+.show-more-btn button {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  width: 220px;
+  transition: background-color 0.3s ease;
+  border-radius: 0;
+}
+
+.show-more-btn button:hover {
+  background-color: #000000;
+}
+
+/* Favorites Slider */
+.favorites-slider {
+  padding: 20px;
+  background-color: #f2f5e9;
+  border-radius: 8px;
+}
+
+.favorites-slider h2 {
+  font-size: 24px;
+  color: #222222;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.favorites-slider-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.program-card-small {
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.program-card-small .program-image {
+  height: 120px;
+}
+
+.program-card-small .program-content {
+  padding: 10px;
+}
+
+.program-card-small .program-content h2 {
+  font-size: 16px;
+}
+
+.program-card-small .program-content p {
+  font-size: 12px;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsiv tilpasning for små skærme */
+@media screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .header p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .header p {
+    font-size: 12px;
+    padding: 0 15px;
+  }
+}
+
+/* Dagens Udfordring Section */
+.daily-challenge {
+  background-color: #222222;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.daily-challenge h2 {
+  font-size: 1.8em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.daily-challenge p {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.daily-challenge button {
+  background-color: #ffffff;
+  color: #222222;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 0;
+}
+
+.daily-challenge button:hover {
+  background-color: #ffffff;
+  color: #222222;
+  border-color: #222222;
+}
+
+/* Progress Tracker Section */
+.progress-tracker {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.progress-tracker h2 {
+  font-size: 1.8em;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.progress-tracker p {
+  font-size: 1.2em;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+/* Cirkulær Progress Bar Container */
+.circular-progress-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #c3c8b3;
+  border: 10px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+/* Indre cirkel til at vise procent */
+.circular-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(50%);
+  background-color: #c3c8b3;
+}
+
+/* Vis procent teksten */
+.circular-progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Lazy Loading */
+img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+img[loading="lazy"]:not([src=""]) {
+  opacity: 1;
+}
